@@ -11,17 +11,18 @@ source:
   sha256: 3409103f0b66abc1e1b0d76679151672618dfdf0491223cd0e6a02ad59d43c9a
 
 build:
+  noarch: python
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
   run:
-    - aiohttp  # [py>=35]
+    - aiohttp
     - curlify >=2.1.0
-    - enum34  # [py<34]
+    - enum34
     - pycountry >=19.8.18
     - python
     - requests >=2.3.0
