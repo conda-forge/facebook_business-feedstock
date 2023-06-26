@@ -1,11 +1,11 @@
-About facebook_business
-=======================
+About facebook_business-feedstock
+=================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/facebook_business-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/facebook/facebook-python-business-sdk
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/facebook_business-feedstock/blob/main/LICENSE.txt)
 
 Summary: Facebook Business SDK
 
