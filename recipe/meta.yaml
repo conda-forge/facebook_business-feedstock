@@ -7,24 +7,24 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/facebook_business-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/facebook_business-{{ version }}.tar.gz
   sha256: bc2f7da29a45435ba9459a03cf842fcc85fe7b99dc9017b3e5c1ecd70d75e88c
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
     - aiohttp
     - curlify >=2.1.0
     - enum34
     - pycountry >=19.8.18
-    - python >=3.6
+    - python >={{ python_min }}
     - requests >=2.3.0
     - six >=1.7.3
 
@@ -36,6 +36,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/facebook/facebook-python-business-sdk
