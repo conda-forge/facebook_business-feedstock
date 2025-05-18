@@ -1,13 +1,17 @@
-About facebook_business
-=======================
+About facebook_business-feedstock
+=================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/facebook_business-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/facebook/facebook-python-business-sdk
 
 Package license: MIT
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/facebook_business-feedstock/blob/main/LICENSE.txt)
-
 Summary: Facebook Business SDK
+
+Development: https://github.com/facebook/facebook-python-business-sdk
+
+Documentation: https://developers.facebook.com/docs/business-sdk
 
 Current build status
 ====================
@@ -27,7 +31,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-facebook_business-green.svg)](https://anaconda.org/conda-forge/facebook_business) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/facebook_business.svg)](https://anaconda.org/conda-forge/facebook_business) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/facebook_business.svg)](https://anaconda.org/conda-forge/facebook_business) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/facebook_business.svg)](https://anaconda.org/conda-forge/facebook_business) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-facebook__business-green.svg)](https://anaconda.org/conda-forge/facebook_business) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/facebook_business.svg)](https://anaconda.org/conda-forge/facebook_business) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/facebook_business.svg)](https://anaconda.org/conda-forge/facebook_business) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/facebook_business.svg)](https://anaconda.org/conda-forge/facebook_business) |
 
 Installing facebook_business
 ============================
@@ -95,7 +99,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
@@ -144,4 +148,5 @@ Feedstock Maintainers
 =====================
 
 * [@kcemenike](https://github.com/kcemenike/)
+* [@xylar](https://github.com/xylar/)
 
