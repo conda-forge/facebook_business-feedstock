@@ -1,5 +1,5 @@
 {% set name = "facebook_business" %}
-{% set version = "24.0.0" %}
+{% set version = "24.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/facebook_business-{{ version }}.tar.gz
-  sha256: 1c93e8e198ec1c2d42e957db2304ba0348f061c0bfe27bac00bfb576a9b4ea00
+  sha256: 3c77443852e4e96afc98178ee70186a3d8f5282d24ae03d9fbbc177dc9fefec6
 
 build:
   number: 0
