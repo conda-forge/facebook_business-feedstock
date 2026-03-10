@@ -1,0 +1,57 @@
+schema_version: 1
+
+context:
+  name: facebook_business
+  version: "25.0.0"
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/facebook_business-${{ version }}.tar.gz
+  sha256: cb4209999b650c0c11cd75e4eb9fdb9d4ad659f1c8cf8da69b7f405fc81421c6
+
+build:
+  number: 1
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - pip
+    - setuptools
+  run:
+    - python >=${{ python_min }}
+    - requests >=2.3.0
+    - six >=1.7.3
+    - curlify >=2.1.0
+    - pycountry >=19.8.18
+    - aiohttp
+
+tests:
+  - python:
+      imports:
+        - facebook_business
+        - facebook_business.adobjects
+      python_version: ${{ python_min }}.*
+  - requirements:
+      run:
+        - python ${{ python_min }}.*
+        - pip
+    script:
+      - pip check
+
+about:
+  summary: Facebook Business SDK
+  license: MIT
+  license_file: LICENSE
+  homepage: https://github.com/facebook/facebook-python-business-sdk
+  repository: https://github.com/facebook/facebook-python-business-sdk
+  documentation: https://developers.facebook.com/docs/business-sdk
+
+extra:
+  recipe-maintainers:
+    - kcemenike
+    - xylar
