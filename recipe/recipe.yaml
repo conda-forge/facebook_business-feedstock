@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: facebook_business
-  version: "25.0.1"
+  version: 25.0.2
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/facebook_business-${{ version }}.tar.gz
-  sha256: 9bfb0e7cce998085d3aab8259535b3838ee4404a489baef73525d719a0e8bf4d
+  sha256: 60f866c63c56efa2eb247c1fbba1d90bb64ee2ccd356242bc6271ead36a425d7
 
 build:
   number: 0
@@ -29,7 +29,7 @@ requirements:
     - curlify >=2.1.0
     - pycountry >=19.8.18
     - aiohttp
-
+    - capi-param-builder-python >=1.3.0
 tests:
   - python:
       imports:
