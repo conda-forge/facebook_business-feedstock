@@ -40,7 +40,7 @@ tests:
 
 about:
   summary: Facebook Business SDK
-  license: MIT
+  license: LicenseRef-Facebook-Platform
   license_file: LICENSE
   homepage: https://github.com/facebook/facebook-python-business-sdk
   repository: https://github.com/facebook/facebook-python-business-sdk
