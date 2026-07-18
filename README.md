@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/facebook_busine
 
 Home: https://github.com/facebook/facebook-python-business-sdk
 
-Package license: MIT
+Package license: LicenseRef-Facebook-Platform
 
 Summary: Facebook Business SDK
 
