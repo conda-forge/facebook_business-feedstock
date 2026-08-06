@@ -36,7 +36,9 @@ tests:
         - facebook_business
         - facebook_business.adobjects
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: Facebook Business SDK
