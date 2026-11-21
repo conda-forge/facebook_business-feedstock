@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: facebook_business
-  version: "27.0.0"
+  version: "27.0.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/facebook_business-${{ version }}.tar.gz
-  sha256: 167c9924170ffb2d1d5cb3e9fc8f348940c08fc9155f2978bb402a28136f179e
+  sha256: e8110689205b41f001f87b72fa2e6552ff3f097e966c2846004568b2a72b2f1c
 
 build:
   number: 0
